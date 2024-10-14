@@ -14,9 +14,11 @@ public class Main {
 		
 		AreaCalculator calculator = new AreaCalculator();
 		
-		System.out.printf("Área retângulo %.2f\n", calculator.calculateArea(rect));
-		System.out.printf("Área círculo %.2f\n", calculator.calculateArea(circle));
-		System.out.printf("Área quadrado %.2f\n", calculator.calculateArea(sqre));
+		calculator.calculateArea(rect);
+		calculator.calculateArea(circle);
+		calculator.calculateArea(sqre);
+		
+		for (String shape : calculator.getAreas())
+			System.out.println(shape);
 	}
-
 }
